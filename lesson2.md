@@ -31,3 +31,98 @@
    1. static data
    2. dynamic data
 3. 各种各样的文档 规约、使用手册...
+
+### 简单抽象
+software = program(code) + data(static / dynamic) + document(specification)
+
+## 特性
+### 硬件
+bathtub curve
+![](./ref/bathCurve.png)
+
+- 时间长了wear out磨损
+- easy to replacce
+
+### 软件
+理想曲线和实际曲线
+经历很多changes(corrected/adapted/enhanced)failure rate就慢慢上升了因为有side effect
+还不能替换
+
+![](./ref/softwareFailureRate.png)
+
+## Software Application Domain
+分类都是有交叉的
+
+- System software
+  - 路由器的TCP
+  - 操作系统
+- Application software
+  - 不联网的单机的
+  - stand-alone programs that solve a specific business need
+- Engineering/scientific software
+  - DS、AI交叉
+  - 各种各样的算法
+- Embedded software
+  -  也是算法
+  -  收集数据的小车车
+- Product-line software
+- Web/Mobile application
+  - PC机用浏览器
+  - 手机用应用
+- Artificial intelligence software
+
+## Legacy Software遗留软件
+
+### 描述
+- 遗留核心功能和重要数据
+- 但是很老，很难改、难扩展
+- 不断change，使用过程中风险不断提高
+
+### 特征
+- longevity
+- business criticality
+- poor quality
+
+### 解决方法
+#### 重新开发
+成本大
+#### 不断演化evolve
+涉及到的四个方面
+- must be **adapted** to meet the needs of new computing **environment** or **technology**
+   - 例子
+     - 以前手工采购，手动填写订单
+     - 现在联网采购
+- must be **enhanced** to implement new business **requirements**
+- must be extended to make it **interoperable** with other more modern systems or databases
+  - 和其他系统、数据库交互
+- must be **re-architected** to make it viable within a evolving compluting environment
+  - 最难的，重新构建架构
+
+
+# the changing nature of software
+
+## WebApps Exercise
+by looking up information, to learn the history of web development.(web1.0~web4.0)
+## Mobile App
+## Cloud Computing
+**特别重要**
+现在所有基本上都基于K8s整个开源的管理系统、分布式的云架构，功能非常强大
+实现按需分配，实时迁移虚拟机资源
+
+开发就是管理这几个层
+
+该架构主要分四层
+- 资源层
+- 虚拟层
+- 中间件层
+- 应用层
+
+- IaaS(Infrastructre as a Service)资源层或基础设施层
+   - 在物理机群上建立虚拟机，最大化资源利用率
+   - KVM技术，基于硬件的完全虚拟化
+   - XEN
+- PaaS(Platform as a Service)中间件层或平台层，都是开发的时候完成
+  - 资源监测: 监测CPU、内存等使用情况
+  - 预警: 设置阈值就报警响应
+  - 优化决策: 资源调度(迁移或伸缩)
+- SaaS
