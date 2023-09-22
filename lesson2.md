@@ -6,7 +6,7 @@
 
 ## 很多为什么
 ### Why long time to finish
-- 需求调研没清除，开发过程中不断迭代
+- 需求调研不清楚，开发过程中不断迭代
 - 分析建模等stages不规范，过程控制不行
 - 基础不行，没培训
 
@@ -111,7 +111,7 @@ by looking up information, to learn the history of web development.(web1.0~web4.
 
 开发就是管理这几个层
 
-该架构主要分四层
+### 架构分层
 - 资源层
 - 虚拟层
 - 中间件层
@@ -126,3 +126,34 @@ by looking up information, to learn the history of web development.(web1.0~web4.
   - 预警: 设置阈值就报警响应
   - 优化决策: 资源调度(迁移或伸缩)
 - SaaS
+
+### 发展历史
+- **Traditional deployment era**: Early on, organizations ran applications on **physical servers**. There was no way to define resource boundaries for applications in a physical server, and this caused resource allocation issues. For example, if multiple applications run on a physical server, *there can be instances where one application would take up most of the resources, and as a result, the other applications would underperform.* A solution for this would be to run each application on a different physical server. But this *did not scale* as resources were underutilized, and it was expensive for organizations to maintain many physical servers.
+- **Virtualized deployment era**: As a solution, virtualization was introduced. It allows you to run multiple Virtual Machines (VMs) on a single physical server's CPU. Virtualization allows applications to be isolated between VMs and provides a level of security as the information of one application cannot be freely accessed by another application. Virtualization allows better utilization of resources in a physical server and allows better scalability because an application can be added or updated easily, reduces hardware costs, and much more. With virtualization you can present a set of physical resources as a cluster of disposable virtual machines.Each VM is a full machine running all the components, including its own operating system, on top of the virtualized hardware.
+- **Container deployment era**: Containers are similar to VMs, but they have relaxed isolation properties to share the Operating System (OS) among the applications. Therefore, containers are considered **lightweight**. Similar to a VM, a container has *its own filesystem, share of CPU, memory, process space, and more.* As they are decoupled from the underlying infrastructure, they are portable across clouds and OS distributions.
+  - Agile application creation and deployment
+  - Continuous development, integration, and deployment
+  - Dev and Ops separation of concerns(开发和运维分开关注)
+  - Obervability
+  - Environmental consistency across development, testing, and production
+  - Cloud and OS distribution portability
+  - Application-centric management
+  - Loosely coupled, distributed, elastic, liberated micro-services
+  - Resource isolation
+  - Resource utilization
+
+### K8s
+Kubernetes provides you with:
+
+- **Service discovery and load balancing** 
+Kubernetes can expose a container using the DNS name or using their own IP address. If traffic to a container is high, Kubernetes is able to load balance and distribute the network traffic so that the deployment is stable.
+- **Storage orchestration Kubernetes** 
+allows you to automatically mount a storage system of your choice, such as local storages, public cloud providers, and more.
+- **Automated rollouts and rollbacks**
+You can describe the desired state for your deployed containers using Kubernetes, and it can change the actual state to the desired state at a controlled rate. For example, you can automate Kubernetes to create new containers for your deployment, remove existing containers and adopt all their resources to the new container.
+- **Automatic bin packing** 
+You provide Kubernetes with a cluster of nodes that it can use to run containerized tasks. You tell Kubernetes how much CPU and memory (RAM) each container needs. Kubernetes can fit containers onto your nodes to make the best use of your resources.
+- **Self-healing**
+Kubernetes restarts containers that fail, replaces containers, kills containers that don't respond to your user-defined health check, and doesn't advertise them to clients until they are ready to serve.
+- **Secret and configuration management**
+Kubernetes lets you store and manage sensitive information, such as passwords, OAuth tokens, and SSH keys. You can deploy and update secrets and application configuration without rebuilding your container images, and without exposing secrets in your stack configuration.
