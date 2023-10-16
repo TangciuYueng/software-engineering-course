@@ -127,3 +127,47 @@ generic process framwork
 8. 团队组织和角色的规定程度。
 
 ## software engineering practice
+1. 理解问题(交流、计划、分析建模)
+2. Plan a solution(设计建模--分析建模的细化) -- 架构
+3. Carry out the plan(code generation)
+4. Examine the result for accuracy(testing and quality assurance)
+一开始是分析类图，然后才到设计类图，数据库表根据设计类图设计
+
+### General Principles
+- The First Principle: The Reason it All Exists（存在价值，解决什么问题）
+- The Second Principle: KISS(Keep It Simple, Stupid)
+- The Third Principle: Maintain the Vision
+- The Fourth Principle: What You Produce, Others Will Comsume（要清楚需求，有人用才行，人家也不关心你技术好不好，重点是可用）
+- The Fifth Principle: Be Open to the Future
+- The Sixth Principle: Plan Ahead for Reuse
+- The Seventh Principle: Think
+
+## SOFTWARE DEVELOPMENT MYTHS
+之前的误解，但现在已经落伍陈旧，会误导现在的开发
+Myth（迷思）：
+**management myths**
+1. 我们已经有一本关于软件构建标准和流程的书籍，这不是我们的员工所需要的全部知识吗？
+2. 如果我们进度落后，我们可以增加更多的程序员来迎头赶上。
+3. 如果我决定将软件项目外包(outsource)给第三方，我可以轻松放松，让那个公司来构建它。
+**customer myths**
+4. 一般的目标陈述足以开始编写程序，细节可以以后填写。
+5. 软件需求不断变化，但是软件的灵活性可以轻松应对。
+**practioner's myths**
+6. 一旦我们编写并使程序运行，我们的工作就完成了。
+7. 直到程序正常运行之前，我没有办法评估其质量。
+8. 项目成功的唯一可交付工作成果是可工作的程序。
+9. 软件工程会使我们创建冗长而不必要的文档，并且必然会减慢我们的速度。
+
+Reality（现实）：
+**management myths**
+1. 一本关于软件构建标准和流程的书籍可能存在，但并不代表它被使用、被软件从业者知晓、反映现代软件工程实践、完整且可适应。
+2. 软件开发不同于制造业的机械过程，加入更多程序员并不能解决进度落后的问题。布鲁克斯指出，“在一个延迟的软件项目中增加人员只会使项目更加延迟。”同时，添加新成员还需要将原有成员花费时间教育新人。
+3. 如果组织不懂得如何在内部管理和控制软件项目，那么将软件项目外包给第三方也会面临困难。
+**customer myths**
+4. 虽然一个全面稳定的需求陈述并不总是可能的，但一个含糊不清的“目标陈述”是灾难的原因。明确的需求通常通过客户和开发人员之间的有效和持续的沟通来逐步发展。
+5. 虽然软件需求确实会不断变化，但变化的影响取决于引入变化的时间。早期提出的变化请求（在设计或代码开始之前）对成本的影响相对较小，随着时间的推移，成本影响会迅速增加。 
+**practioner's myths**
+6. 一位人说过：“你开始‘写代码’的时间越早，完成的时间就会越长。”根据行业数据，60%到80%的软件开发工作将在首次交付给客户之后进行。
+7. 从项目开始阶段就可以应用一种有效的软件质量保证机制——技术审查。软件审查比测试更有效，能够发现特定类别的软件缺陷。
+8. 一个可工作的程序只是软件配置的一部分，软件配置还包括许多元素。各种工作产品（如模型、文档、计划）为成功的工程提供基础，更重要的是为软件支持提供指导。
+9. 软件工程并不是关于创建文档，而是关于创建高质量的产品。更好的质量可以减少重复工作，减少重复工作可以缩短交付时间。

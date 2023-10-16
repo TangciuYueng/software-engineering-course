@@ -11,8 +11,8 @@ capacity maturity model integration
 分为很多个stages/activities
 1. requirement elicitation 需求调研
 2. requirement analysis (modeling) 需求分析
-3. high level design (modeling)
-4. component (level) design (modeling)
+3. high level design (modeling) 概要设计建模
+4. component (level) design (modeling) 详细设计建模
 5. coding
 6. testing(unit testing, integration testing, system testing, acception testing)
 7. delivery/release
