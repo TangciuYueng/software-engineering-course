@@ -148,4 +148,6 @@ CMMI和CMM比较通用
 - SPICE (ISO/IEC15504)
   - 一开始是化工行业，之后才是软件开发(下面那个)
 - ISO 9001:2000 for Software
+
+CMM以及CMMI未完待续...
 ## Summary
