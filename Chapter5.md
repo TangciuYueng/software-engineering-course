@@ -25,6 +25,11 @@ extreme programming
 一个圈就是一个sprint迭代
 - planning
   - user stories
+    - one user story indicates a **use case**
+    - 但不是所有的用例，而是具体的、细化的小的用例
+    - **例子**
+      - 简单的成绩查询就是一个user story
+      - 复杂的成绩查询**里面的**本科生成绩查询、硕士生成绩查询....才是user stories
   - valuse(优先级)
   - acceptance test criteria
     - 这些故事就是甲方做验收测试的依据
@@ -35,15 +40,29 @@ extreme programming
     - 类的属性+方法就是其职责
     - 多个类之间的交互协作
     - 快速地把类设计出来、调用关系、微服务定义
+    - 时序图：类的实例化对象之间的消息传递
   - spike solutions prototype
     - **例子**：设计类的某个类要用到机器学习模型，但是这个算法很复杂，把这个单独拿出来开发，作为一个原型去验证
 - coding
+  - coding之前**要先把测试用例unit test先写好**
   - pair programming
   - refactoring重构，结对编程都写完了，把代码冗余的不规范的修改
-  - continuous integration，对于不同pair写的代码持续集成(慢慢往里面加)，还要通过集成测试来验证
+  - continuous integration，
+    - 对于不同pair写的代码持续集成(慢慢往里面加)，还要通过集成测试来验证
+    - 第一次、第二次...的迭代加进来的集成
 - test
   - unit test
-  - acceptance testing(甲方做的)
+  - smoke testing，先不管其他的，先集成，冒烟了就是能跑了
+  - 每次迭代加上去都能冒烟之后，再有system testing
+  - 回归测试，增加新功能/修改bug，看原有的有没有问题
+  - universal testing suit，每个类都有其测试套件
+  - acceptance testing(甲方做的，看他接受度如何)
+- release
+  - software increment project velocity computed
+  - 本次迭代完成的故事对总故事占比
+
+
+迭代过程中，发现故事有问题，也不用改，记录到backlog中，下一次迭代再修改，不然本次迭代的进程就出问题了
 ## Industrial XP
 ## OTHER Agile Process Models
 
@@ -113,3 +132,15 @@ extreme programming
 
 ##### 回顾会议
 回顾总结好的做法经验 -> 变成过程资产
+
+### DevOps
+开发与运维
+![](./ref/DevOps.PNG)
+每一次发现了问题，又回去
+
+
+- Continuos development
+- Continuos testing
+- Continuos integration
+- Continuos deployment
+- Continuos minitoring
