@@ -3,7 +3,7 @@ CREATE TABLE employee (
     employee_id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(20),
     password VARCHAR(255),
-    phonenumber VARCHAR(13) CHECK (phonenumber LIKE '1%' AND LENGTH(phonenumber) = 11),
+    phone_number VARCHAR(13) CHECK (phone_number LIKE '1%' AND LENGTH(phone_number) = 11),
     api_key CHAR(40),
     type INT
 );
@@ -30,7 +30,7 @@ CREATE TABLE farm (
 -- 1.1.4 weather 表
 CREATE TABLE weather (
     farm_id INT AUTO_INCREMENT,
-    record_date DATE,
+    record_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     high_temp INT,
     low_temp INT,
     precipitation DECIMAL(5, 2),
@@ -76,8 +76,8 @@ CREATE TABLE planting (
     planting_id INT PRIMARY KEY AUTO_INCREMENT,
     field_id INT,
     crop_id INT,
-    start_date DATE,
-    end_date DATE,
+    start_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    end_date TIMESTAMP,
     employee_id INT,
     FOREIGN KEY (field_id) REFERENCES field(field_id),
     FOREIGN KEY (crop_id) REFERENCES crop(crop_id),
@@ -90,8 +90,8 @@ CREATE TABLE equipment (
     name VARCHAR(20),
     type VARCHAR(20),
     farm_id INT,
-    start_date DATE,
-    end_date DATE,
+    start_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    end_date TIMESTAMP,
     FOREIGN KEY (farm_id) REFERENCES farm(farm_id)
 );
 
@@ -109,7 +109,7 @@ CREATE TABLE consumables (
 -- 1.1.10 consumables_history 表
 CREATE TABLE consumables_history (
     consumables_id INT AUTO_INCREMENT,
-    change_date DATE,
+    change_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     employee_id INT,
     weight INT,
     detail VARCHAR(255),
@@ -123,8 +123,8 @@ CREATE TABLE maintenance (
     maintenance_id INT PRIMARY KEY AUTO_INCREMENT,
     employee_id INT,
     equipment_id INT,
-    start_date DATE,
-    end_date DATE,
+    start_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    end_date TIMESTAMP,
     detail VARCHAR(255),
     cost DECIMAL(10, 2) CHECK (cost >= 0),
     FOREIGN KEY (employee_id) REFERENCES employee(employee_id),
@@ -135,9 +135,9 @@ CREATE TABLE maintenance (
 CREATE TABLE issue (
     issue_id INT PRIMARY KEY AUTO_INCREMENT,
     type VARCHAR(20),
-    start_date DATE,
-    address_date DATE,
-    end_date DATE,
+    start_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    address_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    end_date TIMESTAMP,
     planting_id INT,
     detail VARCHAR(255),
     employee_id INT,
@@ -175,7 +175,7 @@ CREATE TABLE wares (
     quality VARCHAR(10),
     crop_id INT,
     weight DECIMAL(10, 2),
-    earliest_date DATE,
+    earliest_date TIMESTAMP,
     stock DECIMAL,
     FOREIGN KEY (warehouse_id) REFERENCES warehouse(warehouse_id),
     FOREIGN KEY (crop_id) REFERENCES crop(crop_id)
@@ -184,7 +184,7 @@ CREATE TABLE wares (
 -- 1.1.16 shelf 表
 CREATE TABLE shelf (
     shelf_id INT PRIMARY KEY AUTO_INCREMENT,
-    shelf_date DATE,
+    shelf_date TIMESTAMP,
     employee_id INT,
     amount INT,
     wares_id INT,
@@ -197,7 +197,7 @@ CREATE TABLE shelf (
 -- 1.1.17 harvest 表
 CREATE TABLE harvest (
     harvest_id INT PRIMARY KEY AUTO_INCREMENT,
-    harvest_date DATE,
+    harvest_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     employee_id INT,
     planting_id INT,
     FOREIGN KEY (employee_id) REFERENCES employee(employee_id),
@@ -218,8 +218,8 @@ CREATE TABLE harvest_info (
 CREATE TABLE issue_routine (
     routine_id INT PRIMARY KEY AUTO_INCREMENT,
     type VARCHAR(20),
-    start_date DATE,
-    end_date DATE,
+    start_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    end_date TIMESTAMP,
     planting_id INT,
     detail VARCHAR(255),
     employee_id INT,
