@@ -58,7 +58,7 @@ generic process framwork
 - Communication
 - Planning(umbrella activities)
 - Modeling
-- Construction
+- Construction(coding & test)
 - Deployment
 
 ## Umbrella Activities

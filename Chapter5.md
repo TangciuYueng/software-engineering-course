@@ -1,3 +1,4 @@
+[TOC]
 # AGILE DEVELOPMENT
 重点是**XP** & **SCRUM**
 

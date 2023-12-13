@@ -1,3 +1,4 @@
+[TOC]
 # Principles That Guide Practice
 
 ## software engineering knowledge
