@@ -16,16 +16,17 @@ Inception启动阶段
 - Working toward Collaboration
 - Asking the First Questions
 - Nonfunctional Requirements
+  - NFR(nonfunctional requirement): quality/performance/security... attribute 另外列在需求文档里面的
 
 ## Elicitation
 - 明确范围
 - 理解功能和可变性
 
 需求调研怎么做
-- 甲方给我们一两页纸的简单描述的需求
-  - 每个人对这样的需求，列出所有的objects(名词和名词词组，就有可能是我们的业务类)，进行拓展
-  - 列出功能，简单描述
-  - 列出系统可能的约束和限制，比如教务管理系统已经毕业的不能访问、用到的硬件的成本限制...
+- 甲方给我们**一两页纸**的简单描述的需求
+  - 每个人开会前对这样的需求，列出所有的**objects**(名词和名词词组，就有可能是我们的业务类)，进行拓展
+  - 列出**功能 services/functions**，简单描述
+  - 列出系统可能的**约束和限制**，比如教务管理系统已经毕业的不能访问、用到的硬件的成本限制...
   - 列出一些非功能需求，性能、安全...
 
     这就是甲方给的
@@ -48,6 +49,9 @@ Inception启动阶段
 
 ## Elaboration
 细化
+developing a refined requirements model(Chapter 9-11, function/behavior/information)
+
+driven by the creation and refinement of user scenarios that describe how the end user will interact the system 然后用户场景提取出分析类
 
 还是上面那个例子，通过找出来的名词
 - actor
@@ -78,12 +82,21 @@ Inception启动阶段
 ## Negotiation
 评审(umbrella framework)
 
-- 分布式调试发现错误并确定其原因
-- 运行时验证确定软件是否符合其规范
-- 运行时验证评估演化的软件是否满足用户目标
-- 业务活动监控评估系统是否满足业务目标，以及
-- 演进和协同设计在系统演化时向利益相关方提供信息。
+- 分布式调试**发现错误并确定其原因**
+- 运行时验证确定软件是否**符合其规范**
+- 运行时验证评估演化的软件是否**满足用户目标**
+- 业务活动监控评估系统是否**满足业务目标**
+- 演进和协同设计在系统演化时向**利益相关方提供信息**
 
 ## Specification
+文档、建模、使用场景等等或者它们的组合
 
 ## Validation
+检查上面的 specification 不模糊、没错误、没缺漏...
+
+**the primary requirements validation mechanism is the technical review**
+
+## Requirements management
+a set of activities that **help the project team identify, control and track requirements and changes to requirements** at any time as the project proceeds.
+
+**software configuration management(SCM) techniques** 

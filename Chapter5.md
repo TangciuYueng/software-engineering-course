@@ -69,7 +69,7 @@ extreme programming
 
 ### SCRUM
 查看路径`./ppt/scrum agile developoment.pdf`的文件
-[zhihu_referenct](https://zhuanlan.zhihu.com/p/398276773)
+[zhihu_reference](https://zhuanlan.zhihu.com/p/398276773)
 
 - 基于迭代、增量
 - 整个开发包括多个小的迭代周期，2-4周

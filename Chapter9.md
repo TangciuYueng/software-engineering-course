@@ -26,13 +26,14 @@ Arlow和Neustadt在创建分析模型时提出了一些值得遵循的经验法�
 
 ### Domain Analysis
 
-对某个领域构建**业务类库**(umbrella activity，都标准化了成本低了，质量就提高了)
+对某个领域构建**业务类库**(**umbrella activity**，都标准化了成本低了，质量就提高了)
+找出 analysis patterns, analysis classes and information 其他人可能再用到的
 
 ![](./ref/Domain.PNG)
 **要考**来怎么分析
 
 Class taxonomies 找词组分类
-类的属性定于、方法的定义、参数的定义**标准化**，才有利于复用
+类的属性定于、方法的定义、参数的定义**标准化**，才有利于**复用**
 每个类的功能要说清楚
 Domain languages UML语言等、用某种符号体系给表示出来
 
@@ -41,7 +42,13 @@ Domain languages UML语言等、用某种符号体系给表示出来
 ![](./ref/analysisModelingElement.PNG)
 需求工程
 - 两个规约
+  - 需求规约
+  - 需求分析规约
 - 四个建模
+  - Scenario-based models: use cases, user stories
+  - Class models: class diagrams, collaboration diagrams
+  - Behavioral model: state diagram, sequence diagrams
+  - Function or information models: Data flow models(less used), activity diagrams
 
 一个用例要完成对应功能，大多数是对用例里面的类的调用；也可以有其他的用例的类，但要尽量少
 

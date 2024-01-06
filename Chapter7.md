@@ -8,70 +8,70 @@
 ## core principles
 
 ### principles that guide process
-- be agile
-- focus on quality at every step
-- be ready to adapt
-- build an effective team
-- establish mechanism for communication and coordination
-- manage change
-- assess risk
-- create work products that provide value for others
+- be **agile**
+- focus on **quality** at every step
+- be ready to **adapt**
+- build an **effective team**
+- establish mechanism for **communication and coordination**
+- manage **change**
+- assess **risk**
+- create work products that provide **value** for others
 
 ### priciples that guide practice
 - divide and conquer
-  - 需求调研开始就要考虑分而治之
+  - 需求调研开始就要考虑**分而治之**
   - 例如：每个函数要求高内聚，只做一件事情
 - understand the use of abstraction
-  - 建模UML也是抽象 
+  - 建模UML也是**抽象** 
   - 代码都是抽象
 - strive for consistency
-  - 后一个阶段和前一个有偏差、不一致就出问题了
-- focus on the transfer of information
-- build software that exhibits effective mudularity
+  - 后一个阶段和前一个有偏差、不**一致**就出问题了
+- focus on the **transfer of information**
+- build software that exhibits effective **mudularity**
   - 类、微服务、子系统等等都是模块化，粒度不同
-- look for pattern
+- look for **pattern**
   - 前人行之有效的已经步骤化的
-- when possible, represent the problem and its solution from a number of different perspectives
+- when possible, represent the problem and its solution from a number of different perspectives**找最好的**
   - 每个人的数据库设计都不同，找出冗余最少的那个
-- remember that someone will maintain the software
+- remember that someone will **maintain** the software
   - 第一次迭代的时候，需要变更的放到backlog里面，先完成第一次按照之前的，第二次迭代再完成这个变更
   - software由document、coding等等组成
 
 ## principles that guide each framework activity
 ### communication principles
-- listen
+- **listen**
   - 多听听甲方，看他们有什么需求
-- prepare before you communicate
-- someone should facilitate the activity
-- face-to-face communication is best
-- take notes and document decisions
+- **prepare** before you communicate
+- someone should **facilitate** the activity
+- **face-to-face** communication is best
+- take **notes** and document decisions
   - 乙方记录，让甲方确认
 - strive for collaboration
-- stay focused, modularize your discussion
+- stay focused, **modularize** your discussion
   - 谈话讨论分类，遇到问题把这问题模块化
-- if sth is unclear, draw a picture
+- if sth is unclear, draw a **picture**
 - once you agree to sth, move on. if you can't agree to sth, move on. if a feature or function is unclear and cannot be clarified at the moment, move on
-  - 有个问题搞不清楚，先放下记录下来，先开发其他的，随着项目的开发，会清楚的大概率
-- negotiation is not a contest or a game. it works best when both parties win
+  - 有个**问题搞不清楚，先放下记录下来，先开发其他的，随着项目的开发，会清楚的大概率**
+- negotiation is not a contest or a game. it works best when **both parties win**
 
 ### planning principles
-- understand the scope of the project
+- understand the **scope of the project**
   - 需求调研后就有开发的范围
-- involve stakeholders in the planning activity
+- **involve stakeholders** in the planning activity
   - 需求范围搞清楚才做计划，甲方也参与计划进来
 - recognize that planning is iterative
-  - 某一次迭代的过程中，计划不变，但不同迭代中计划也可以迭代改变
-- estimate based on what you know
-- consider risk as you define the plan
+  - 某一次迭代的过程中，**计划不变，但不同迭代中计划也可以迭代改变**
+- estimate **based on what you know**
+- **consider risk** as you define the plan
   - 招了个新手过来，我们将计划3人/天增加到3.5人/天
-- be realistic
-- adjust granularity(粒度) as you define the plan
-- define how you intend to ensure quality
+- be **realistic**
+- adjust **granularity**(粒度) as you define the plan
+- define **how you intend to ensure quality**
   - 通过评审、测试
   - 在一个阶段最后有个小任务在计划中
-- describe how you intend to accommodate change
+- describe **how you intend to accommodate change**
   - 变更在两次迭代之间，在迭代之中不要变，先记录下来
-- track the plan frequently and make adjustments as required
+- **track the plan** frequently and make adjustments as required
   - 每天检查追踪然后调整
 
 每个人都应该参与进计划中
@@ -82,10 +82,10 @@
 - 功能建模
 - 行为建模
 
-#### modeling principles
+modeling principles
 - the primary goal of the team is to build software, not create models
-  - 建模要简单，是服务软件开发
-- travel light - don't create more models than you need
+  - **建模要简单，是服务软件开发**
+- travel light, don't create more models than you need
 - strive to produce the simplest model that will describe the problem or the software
   - 实际开发围绕use case diagram差不多
 - build models in a way that makes them amenable to change
@@ -116,7 +116,7 @@
 
 - the **information domain** of a problem must be represented and understand
 - the **functions** that the software performs must be **defined**
-- the behavior of the software(as a consequence of external events) must be represented
+- the **behavior** of the software(as a consequence of external events) must be represented
 - the models that depict information, function, and behavior must be **paritioned in a manner that uncovers detail in a layered**(or hierarchical) fashion
 - the analysis task should move **from essential information** toward implementation detail
 
@@ -175,12 +175,12 @@
 ##### validation principles
 - conduct a code walkthrough when appropriate
 - perform unit tests and correct errors you've uncoverd
-- refactor the code
-  - 重命名
-  - 抽取代码
-  - 封装字段
-  - 抽取接口
-  - 提升方法内的局部变量为方法的参数
+- refactor the code**要考**
+  - 重命名：更易理解
+  - 抽取代码：方法内一段代码抽取为另一个方法
+  - 封装字段：类的某个字段转换成属性，更合理控制字段的访问
+  - 抽取接口：类的属性、方法组成接口
+  - 提升方法内的局部变量为方法的参数：写代码的时候
   - 删除参数
   - 重排参数
 

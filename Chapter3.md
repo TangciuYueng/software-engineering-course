@@ -116,7 +116,7 @@ MS-project管理工具
   - 比如coding要检查详细设计，前提是详细设计**要有、评审、修改...**
 - Problem: The specific problem to be solved by the patterns
 - Solution: Describes how to implement the pattern successfully
-- Resultingg Context: pattern做完之后
+- Resulting Context: pattern做完之后
   - 有哪些团队的相关工作的activities must have occured
   - exit state for the process
   - 通过一些工具传递做完的信息

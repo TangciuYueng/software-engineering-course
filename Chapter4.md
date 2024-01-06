@@ -50,7 +50,7 @@ V-model
 ### Evolutionary Process Models
 演化模型
 
-不要求需要那么明确，发现这个proces不对了，再回去改
+不要求需要那么明确，发现这个process不对了，再回去改
 
 #### The Prototypeing paradigm(范例)
 customers not identify detailed requirements for
@@ -79,7 +79,7 @@ functions and features于是我们通过原型模型把**需求导出**
 
 现在要和全国的婚姻登记系统联网，用原型模型就不行了，原型对于其他的婚姻登记系统这些大量**外部**的接口很难导出需求
 
-不同在于要做**风险分析**，因此适合于**高风险的/大的**项目
+不同在于要做**风险分析**，因此适合于**高风险的/大的**项目，螺旋模型可以**适用于整个软件生命周期**，不仅限于早期的原型阶段。它可以用于概念开发、新产品开发、产品增强等不同阶段
 
 ### Concurrent Models
 

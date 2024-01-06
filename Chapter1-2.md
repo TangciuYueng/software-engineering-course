@@ -52,6 +52,7 @@ bathtub curve
 ![](./ref/softwareFailureRate.png)
 
 ## Software Application Domain
+SASEPWA
 分类都是有交叉的
 
 - System software
