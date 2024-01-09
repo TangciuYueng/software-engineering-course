@@ -6,6 +6,13 @@
 - 经济发展的dominant factor
 
 ## 很多为什么
+软件开发遇到的问题
+- 开发时间 take so long
+- 开发成本 cost so high
+- 开发错误检查 find all errors
+- 维护时间投入 spend time maintaining
+- 开发进度评估预测 measure progress
+
 ### Why long time to finish
 - 需求调研不清楚，开发过程中不断迭代
 - 分析建模等stages不规范，过程控制不行
@@ -16,7 +23,10 @@
 - 业务逻辑/流/路径 是无穷的
 - 需求调用功能没实现，不符合需求
   - 例如要两位小数，结果只实现了一位小数
-  - 整个过程中遇到的各种问题都是errors，其中一些errors导致failure，这些errors成为defect缺陷
+  - 整个过程中遇到的各种问题都是errors，其中一些 errors 导致 failure，这些 errors 成为defect 缺陷。error 交付之前 failure 交付之后运行的结果不符合客户需求，failure 可能由一个或多个 error 导致
+  - 两种 error 检查技术
+    - review 评审
+    - testing 测试
 ### Why so much time & effort for maintenance
 - Alops
 - 模块各种各样接口，改一个动很多
@@ -25,9 +35,9 @@
 
 ## definition
 1. 指令/代码/程序 满足
-   1. features特性、非功能性需求，可移植性、可拓展性等
-   2. function
-   3. performance性能，其实也属于非功能性需求
+   1. features 特性、非功能性需求，可移植性、可拓展性等
+   2. function 功能性需求
+   3. performance 性能，其实也属于非功能性需求，比较重要就单独拎出来
 2. data structure 数据 处理信息流
    1. static data
    2. dynamic data
@@ -46,7 +56,7 @@ bathtub curve
 
 ### 软件
 理想曲线和实际曲线
-经历很多changes(corrected/adapted/enhanced)failure rate就慢慢上升了因为有side effect
+经历很多 changes(corrected/adapted/enhanced) failure rate 就慢慢上升了因为有 side effect
 还不能替换
 
 ![](./ref/softwareFailureRate.png)
@@ -84,21 +94,22 @@ SASEPWA
 - longevity
 - business criticality
 - poor quality
+- ...
 
 ### 解决方法
 #### 重新开发
 成本大
 #### 不断演化evolve
 涉及到的四个方面
-- must be **adapted** to meet the needs of new computing **environment** or **technology**
+- must be **adapted** to meet the needs of new computing **environment** or **technology** 适应性调整
    - 例子
      - 以前手工采购，手动填写订单
      - 现在联网采购
-- must be **enhanced** to implement new business **requirements**
-- must be extended to make it **interoperable** with other more modern systems or databases
+- must be **enhanced** to implement new business **requirements** 升级
+- must be extended to make it **interoperable** with other more modern systems or databases 更多系统交互
   - 和其他系统、数据库交互
 - must be **re-architected** to make it viable within a evolving compluting environment
-  - 最难的，重新构建架构
+  - 最难的，重新构建架构来适应新环境
 
 
 # the changing nature of software

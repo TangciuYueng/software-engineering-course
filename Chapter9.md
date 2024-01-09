@@ -4,6 +4,7 @@
 ## Requirement Analysis
 ![](./ref//RequirementModelMethod.PNG)
 
+设计以分析为依据，分析以需求为依据
 相互交叉(边界难以划分，一个做多一点，另一个甚至可以不做)**要考为什么**
 以前一个为依据
 界限不明显
@@ -25,6 +26,7 @@ Arlow和Neustadt在创建分析模型时提出了一些值得遵循的经验法�
 - 保持模型的简洁性。
 
 ### Domain Analysis
+需求建模里面的 umbrella activity
 
 对某个领域构建**业务类库**(**umbrella activity**，都标准化了成本低了，质量就提高了)
 找出 analysis patterns, analysis classes and information 其他人可能再用到的

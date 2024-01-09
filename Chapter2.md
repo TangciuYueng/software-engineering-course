@@ -1,20 +1,20 @@
 [TOC]
 # Chapter2 Software Engineering
 ## DEFINING
-- The application of a systematic, disciplined, quantifiable, approach to the development operation, and maintenance of software
+- The application of a systematic, disciplined, quantifiable, approach to the development operation, and maintenance of software, SDQ(系规量)
   - **systematic**: 软件开发的**过程化**，过程里面要**系统化**
   - **disciplined**: 开发过程中要遵守的一系列规则的**约束**，用什么test，用什么配置管理...
   - **quantifiable**
-    - **Software Review**(评审) is systematic inspection of a software by one or more individuals who work together to **find and resolve errors and defects** in the software during the **early stages** of Software Development Life Cycle (SDLC). 
+    - **Software Review**(评审) is systematic inspection of a software by one or more individuals who work together to **find and resolve errors and defects** in the software during the **early stages** of Software Development Life Cycle (SDLC 就是后面瀑布模型、增量模型等表示的那几个阶段). 
     - 对软件开发过程中的各种衡量依据，定量化分析判断开发过程的好坏，然后进一步改进。例如每页的缺陷率不超过XX%
     - 非常非常重要
 - the **study of approaches** as in above
 
 把软件工程**抽象为不同的layers**，layered technology
 ![](./ref/layeredSE.png)
-- 底部，**核心目的: 提高质量**，quality focus
-- Process，过程化
-- Methods，过程中会使用各种各样的方法，例如UML
+- 底部，质量是根基，**核心目的: 提高质量**，quality focus
+- Process，过程化，回答如何提高质量
+- Methods，过程中会使用各种各样的方法，例如 UML、架构方法、分析方法、设计方法、测试方法...
 - Tools，GIT、IDE、Maven...
   - 发展趋势 -> 工具集成Tool integration
   - Software engineering tools provide automated or semi-automated support for the process and the methods.When tools are integrated so that information created by one tool can be used by another, a system for the support of software development, called **computer-aided software engineering(CASE)**, is established.
@@ -22,6 +22,19 @@
 
 ## THE SOFTWARE ENGINEERING
 activities/stages, actions & tasks的集合
+
+task 是最小单元，原子性，高内聚
+
+粒度
+- Activity 广泛目标
+- Action 产生主要工作产品的任务
+- Task 小而明确的目标
+
+action 是若干个 task
+- T: work tasks
+- P: work products 完成 tasks 之后形成一个工作产品
+- Q: QA
+- M: milestone
 
 系统化的包含关系
 - activity1/stage1
@@ -48,6 +61,16 @@ activities/stages, actions & tasks的集合
     - task3: 举行评审会
     - task4：修改代码
 
+也有 coding 分算co测质重re
+- 分析理解详细设计（详细的设计规约，理解接口）；
+- 算法以及数据结构；
+- 准备环境写代码
+- (单元测试)自我测试self-testing（可能考虑的：算法复杂度时间性能）；
+- SQA软件质量保证；
+- refactor重构（测试后对大项目可能要重构，规范性的）
+- code review；
+- code end(里程碑任务milestone)
+
 每一次迭代都是一个过程，故有迭代开发DevOps
 ## Process Framework
 过程框架的两种活动
@@ -64,6 +87,9 @@ generic process framwork (CPMCD)
 ## Umbrella Activities
 通过**管理**进而提高软件开发过程中的*工作产品*质量
 
+贯穿整个项目，不是单独活动
+控制进度，保障质量，规范风险
+
 软件质量就是在开发过程中形成的
 
 工作产品
@@ -72,7 +98,7 @@ generic process framwork (CPMCD)
 - ...
 
 **典型的management activities**
-- 项目管理
+- 项目管理 Software Project Tracking & Control
   - planning
   - tracking
   - control
@@ -136,12 +162,12 @@ generic process framwork (CPMCD)
 
 ### General Principles
 - The First Principle: The Reason it All Exists（存在价值，解决什么问题）
-- The Second Principle: KISS(Keep It Simple, Stupid)
-- The Third Principle: Maintain the Vision
+- The Second Principle: KISS(Keep It Simple, Stupid) 架构简单清晰明了
+- The Third Principle: Maintain the Vision 每个阶段可见，类图等工具
 - The Fourth Principle: What You Produce, Others Will Comsume（要清楚需求，有人用才行，人家也不关心你技术好不好，重点是可用）
-- The Fifth Principle: Be Open to the Future
-- The Sixth Principle: Plan Ahead for Reuse
-- The Seventh Principle: Think
+- The Fifth Principle: Be Open to the Future 面向未来，接口不写死，便于修改维护
+- The Sixth Principle: Plan Ahead for Reuse 复用
+- The Seventh Principle: Think 认真思考
 
 ## SOFTWARE DEVELOPMENT MYTHS
 之前的误解，但现在已经落伍陈旧，会误导现在的开发

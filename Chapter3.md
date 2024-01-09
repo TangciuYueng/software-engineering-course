@@ -32,6 +32,7 @@ graph LR
     Construction --> Deployment
     Deployment --> Communication
 ```
+不管有多少问题，本次迭代完再说，要出一个可展示的产品
 ### Parallel process flow
 ```mermaid
 graph LR
@@ -47,6 +48,11 @@ graph LR
 一个action一个task都行
 
 ## Identifying a Task Set
+- work tasks
+- work products
+- quality assurance points
+- project milestones
+
 应该选择最适合项目需求和团队特点的任务集。这意味着软件工程可以根据软件项目的具体需求和项目团队的特点进行**适应和调整**
 
 小项目
@@ -93,7 +99,6 @@ graph LR
 11. 注明系统的约束和限制：记录系统可能面临的约束和限制，例如时间、资源、技术等方面的限制。
 
 12. 讨论系统验证的方法：与利益相关者一起讨论并确定系统验证的方法，确保系统符合规范和要求。
-
 
 task是软件工程最小的工作单元了
 
@@ -149,6 +154,8 @@ CMMI和CMM比较通用
 - SPICE (ISO/IEC15504)
   - 一开始是化工行业，之后才是软件开发(下面那个)
 - ISO 9001:2000 for Software
+
+![](./ref/CMM.PNG)
 
 CMM以及CMMI未完待续...
 ## Summary

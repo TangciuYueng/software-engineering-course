@@ -52,13 +52,28 @@ V-model
 
 不要求需要那么明确，发现这个process不对了，再回去改
 
+强调模型迭代iteration
+
+场景：
+- Complex系统复杂，模型演化需求变更；
+- Preview紧凑的市场期限要求一个功能有限的版本需要应对市场和企业的压力；
+- Requirement一系列核心产品和系统需求明确，但产品和系统拓展的细节还没有被设计出来
+
+
 #### The Prototypeing paradigm(范例)
-customers not identify detailed requirements for
+customers **not identify detailed requirements** for
 functions and features于是我们通过原型模型把**需求导出**
 也是有一些**基本的业务逻辑**功能
 他举的例子是云南省的结婚登记系统，甚至没有数据库，但是已经有可以有基本报表、打印结婚证等核心功能。只把界面留下来，其他抛弃掉了
 
 ![](./ref/prototypingDiagram.PNG)
+
+- Communication
+- Quick plan
+- Modeling Quick design
+- Construction of prototype
+- Deployment Delivery & feedback
+- 又转回去
 
 **迭代**多几轮
 
@@ -79,7 +94,11 @@ functions and features于是我们通过原型模型把**需求导出**
 
 现在要和全国的婚姻登记系统联网，用原型模型就不行了，原型对于其他的婚姻登记系统这些大量**外部**的接口很难导出需求
 
+Big/Risky/Unclear
 不同在于要做**风险分析**，因此适合于**高风险的/大的**项目，螺旋模型可以**适用于整个软件生命周期**，不仅限于早期的原型阶段。它可以用于概念开发、新产品开发、产品增强等不同阶段
+
+每次迭代得到一个 work product
+CPMCD 可以裁剪
 
 ### Concurrent Models
 

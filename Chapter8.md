@@ -4,6 +4,8 @@
 - 需求诱导得到的需求规约
 - 需求分析得到的需求分析规约
 
+7个任务是并行的
+
 ## Establish the groupwork
 Inception启动阶段
 - 辨识所有参加需求调研的人员
@@ -48,7 +50,7 @@ Inception启动阶段
 - 构建use case
 
 ## Elaboration
-细化
+细化，进行建模
 developing a refined requirements model(Chapter 9-11, function/behavior/information)
 
 driven by the creation and refinement of user scenarios that describe how the end user will interact the system 然后用户场景提取出分析类
@@ -89,9 +91,11 @@ driven by the creation and refinement of user scenarios that describe how the en
 - 演进和协同设计在系统演化时向**利益相关方提供信息**
 
 ## Specification
+规约
 文档、建模、使用场景等等或者它们的组合
 
 ## Validation
+评审
 检查上面的 specification 不模糊、没错误、没缺漏...
 
 **the primary requirements validation mechanism is the technical review**
@@ -100,3 +104,5 @@ driven by the creation and refinement of user scenarios that describe how the en
 a set of activities that **help the project team identify, control and track requirements and changes to requirements** at any time as the project proceeds.
 
 **software configuration management(SCM) techniques** 
+
+进行版本控制和管理

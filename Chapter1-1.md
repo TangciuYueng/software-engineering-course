@@ -31,13 +31,13 @@ capacity maturity model integration
    3. 行为建模()
 
 # 软件变更的三种原因
-- corrected该BUG
-- adapted适应老系统
+- corrected 修改 BUG
+- adapted 适应老系统
 - enhanced
 
-因而导致maintenance工作量大
+因而导致 maintenance 工作量大
 
-因此本课程提供framework
+因此本课程提供 framework 对应后面的那个 layers 最终目的提高质量
 - 过程
 - 方法
 - 工具
